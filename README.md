@@ -8,6 +8,8 @@ ETL viết tắt của Extract, Transform và Load. ETL đề cập tới quá t
 Trích xuất dữ liệu là giai đoạn đầu tiên của quy trình ETL, nơi mà dữ liệu được lấy từ các hệ thống nguồn khác nhau. Data có thể hoàn toàn thô, chẳng hạn như dữ liệu cảm biến từ các thiết bị IoT, hoặc có thể dữ liệu phi cấu trúc từ các tài liệu y tế được scan hoặc từ email của công ty. Dữ liệu có thể là steaming data đến từ một mạng truyền thông xã hội hoặc các giao dịch mua bán trên thị trường chứng khoán theo thời gian thực (real-time) hoặc dữ liệu cũng có thể đến từ các database và data warehouse hiện có của doanh nghiệp. 
 
 ## Transform 
+Giai đoạn transform là nơi mà các quy tắc (rules) và các quy trình (processes) được áp dụng cho dữ liệu để chuẩn bị dữ liệu cho việc load dữ liệu sau khi biến đổi vào các hệ thống đích (target system). Điều này thường được thực hiện trong một môi trường trung gian được gọi là "khu vực tổ chức" (staging area). Tại đây, dữ liệu được làm sạch để đảm bảo độ tin cậy (reliability) và được điều chỉnh để đảm bảo khả năng tương thích với hệ thống đích (target system).
+
 ## Load 
 ## ETL Workflows dưới dạng Data Pipelines 
 ## Staging Areas (Khu vực tập trung)
