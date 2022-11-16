@@ -35,6 +35,11 @@ Theo truyền thống, độ chính xác tổng thể của ETL workflow là m�
 
 **Hình 2.** Các data packets được cung cấp theo trình tự hoặc "được dẫn" (piped) thông qua ETL data pipeline. Lý tưởng nhất, vào thời điểm packet thứ 3 được ingested, cả 3 quy trình ETL đều chạy đồng thời trên các packet khác nhau. 
 
+Với các quy trình ETL thông thường, dữ liệu được xử lý theo batches, thường theo lịch trình lặp lại cách nhau từ vài giờ đến vài ngày.
+
 ## Staging Areas (Khu vực tập trung)
+
+![staging_](https://user-images.githubusercontent.com/103992475/202250185-235a13d9-8c23-41a1-b311-a819f2245745.png)
+
 ## ETL Workflows dưới dạng DAGs
 ## Các tool ETL phổ biến 
