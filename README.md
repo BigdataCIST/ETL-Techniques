@@ -38,6 +38,7 @@ Theo truyền thống, độ chính xác tổng thể của ETL workflow là m�
 Với các quy trình ETL thông thường, dữ liệu được xử lý theo batches, thường theo lịch trình lặp lại cách nhau từ vài giờ đến vài ngày.
 
 ## Staging Areas (Khu vực tập trung)
+ETL pipelines thường được sử dụng để tích hợp dữ liệu từ các hệ thống khác nhau và thường được lưu trữ trong doanh nghiệp. Các hệ thống này có thể từ các nhà cung cấp, địa điểm và bộ phận khác nhau của công ty, điều này có thể làm tăng thêm độ phức tạp trong hoạt động. Ví dụ: (hình 3) hệ thống OLAP kế toán chi phí có thể truy xuất dữ liệu từ các hệ thống OLTP riêng biệt được sử dụng bởi bộ phận tính lương, bán hàng và mua hàng riêng biệt. 
 
 ![staging_](https://user-images.githubusercontent.com/103992475/202250185-235a13d9-8c23-41a1-b311-a819f2245745.png)
 
