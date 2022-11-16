@@ -22,6 +22,9 @@ Nhiều cách biến đổi khác nhau được áp dụng như:
 * Aggregating: tổng hợp dữ liệu.
 
 ## Load 
+Giai đoạn load là ghi dữ liệu đã được biến đổi vào một hệ thống đích. Hệ thống đích (target system) có thể là database hoặc data warehouse, data mart, data lake hoặc một số kho dữ liệu tập trung để phân tích, mô hình hóa và được sử dụng để đưa ra các quyết định bởi người phân tích kinh doanh, quản lý, giám đóc điều hành, data scientists và tất cả người dùng ở mọi cấp bậc trong doanh nghiệp. 
+
+
 ## ETL Workflows dưới dạng Data Pipelines 
 ## Staging Areas (Khu vực tập trung)
 ## ETL Workflows dưới dạng DAGs
