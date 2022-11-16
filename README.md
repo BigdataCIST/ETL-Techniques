@@ -24,6 +24,7 @@ Nhiều cách biến đổi khác nhau được áp dụng như:
 ## Load 
 Giai đoạn load là ghi dữ liệu đã được biến đổi vào một hệ thống đích. Hệ thống đích (target system) có thể là database hoặc data warehouse, data mart, data lake hoặc một số kho dữ liệu tập trung để phân tích, mô hình hóa và được sử dụng để đưa ra các quyết định bởi người phân tích kinh doanh, quản lý, giám đóc điều hành, data scientists và tất cả người dùng ở mọi cấp bậc trong doanh nghiệp. 
 
+Trong hầu hết các trường hợp, dữ liệu được load vào trong database, các ràng buộc được xác định bởi lược đồ (schema) phải được thỏa mãn workflow để chạy thành công. Lược đồ (schema) là tập các quy tắc được gọi là ràng buộc toàn vẹn, bao gồm các quy tắc như tính duy nhất và các trường bắt buộc. Do đó, các yêu cầu như vậy được áp dụng cho giai đoạn load giúp đảm bảo chất lượng dữ liệu tổng thể.
 
 ## ETL Workflows dưới dạng Data Pipelines 
 ## Staging Areas (Khu vực tập trung)
