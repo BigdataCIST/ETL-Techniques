@@ -10,6 +10,17 @@ Trích xuất dữ liệu là giai đoạn đầu tiên của quy trình ETL, n�
 ## Transform 
 Giai đoạn transform là nơi mà các quy tắc (rules) và các quy trình (processes) được áp dụng cho dữ liệu để chuẩn bị dữ liệu cho việc load dữ liệu sau khi biến đổi vào các hệ thống đích (target system). Điều này thường được thực hiện trong một môi trường trung gian được gọi là "khu vực tổ chức" (staging area). Tại đây, dữ liệu được làm sạch để đảm bảo độ tin cậy (reliability) và được điều chỉnh để đảm bảo khả năng tương thích với hệ thống đích (target system).
 
+Nhiều cách biến đổi khác nhau được áp dụng như:
+* Cleaning: sửa đổi giá trị lỗi bất kỳ hoặc missing values.
+* Filtering: chỉ chọn những gì cần thiết.
+* Joining: hợp nhất dữ liệu từ nhiều nguồn khác nhau.
+* Normalizing: chuyển đổi dữ liệu sang các đơn vị phổ biến.
+* Data Structuring: chuyển đổi một định dạng dữ liệu sang định dạng dữ liệu khác, chẳng hạn JSON, XML or CSV về cơ sở dữ liệu dạng bảng.
+* Feature Engineering: sử dụng như trong machine learning.
+* Anonymizing and Encrypting: đảm bảo riêng tư và bảo mật.
+* Sorting: sắp xếp thứ tự dữ liệu để cải thiện hiệu năng tìm kiếm.
+* Aggregating: tổng hợp dữ liệu.
+
 ## Load 
 ## ETL Workflows dưới dạng Data Pipelines 
 ## Staging Areas (Khu vực tập trung)
