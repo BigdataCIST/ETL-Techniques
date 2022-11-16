@@ -27,8 +27,13 @@ Giai đoạn load là ghi dữ liệu đã được biến đổi vào một h�
 Trong hầu hết các trường hợp, dữ liệu được load vào trong database, các ràng buộc được xác định bởi lược đồ (schema) phải được thỏa mãn workflow để chạy thành công. Lược đồ (schema) là tập các quy tắc được gọi là ràng buộc toàn vẹn, bao gồm các quy tắc như tính duy nhất và các trường bắt buộc. Do đó, các yêu cầu như vậy được áp dụng cho giai đoạn load giúp đảm bảo chất lượng dữ liệu tổng thể.
 
 ## ETL Workflows dưới dạng Data Pipelines 
+Nói chung, ETL workflow là một quy trình được cân nhắc kỹ lưỡng, được thiết kế cẩn thận để đáp ứng các yêu cầu kỹ thuật và yêu cầu của người dùng cuối.
+
+Theo truyền thống, độ chính xác tổng thể của ETL workflow là một yêu cầu quan trọng hơn tốc độ, mặc dù hiệu quả thường là một yếu tố quan trọng trong việc giảng hiểu chi phí tài nguyên. Để tăng hiệu quả, dữ liệu được cung cấp thông qua một data pipeline trong các gói dữ liệu nhỏ hơn (như hình 2). Trong khi một packet đang được extract, một packet trước đó đang được transform và một packet khác đang được load. Bằng cách này, dữ liệu có thể tiếp tục di chuyển trong workflow mà không bị gián đoạn. Mọi bottleneck còn lại được giải trong data pipeline thường có thể được xử lý bằng cách thực hiện song song các task chậm hơn.
 
 ![ETL_Workflow_as_Data_Pipelines](https://user-images.githubusercontent.com/103992475/202229381-ed2713a7-4502-4944-befb-294a12c48246.png)
+
+**Hình 2.** Các data packets được cung cấp theo trình tự hoặc "được dẫn" (piped) thông qua ETL data pipeline. Lý tưởng nhất, vào thời điểm packet thứ 3 được ingested, cả 3 quy trình ETL đều chạy đồng thời trên các packet khác nhau. 
 
 ## Staging Areas (Khu vực tập trung)
 ## ETL Workflows dưới dạng DAGs
