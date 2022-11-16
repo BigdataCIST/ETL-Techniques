@@ -27,6 +27,9 @@ Giai đoạn load là ghi dữ liệu đã được biến đổi vào một h�
 Trong hầu hết các trường hợp, dữ liệu được load vào trong database, các ràng buộc được xác định bởi lược đồ (schema) phải được thỏa mãn workflow để chạy thành công. Lược đồ (schema) là tập các quy tắc được gọi là ràng buộc toàn vẹn, bao gồm các quy tắc như tính duy nhất và các trường bắt buộc. Do đó, các yêu cầu như vậy được áp dụng cho giai đoạn load giúp đảm bảo chất lượng dữ liệu tổng thể.
 
 ## ETL Workflows dưới dạng Data Pipelines 
+
+![ETL_Workflow_as_Data_Pipelines](https://user-images.githubusercontent.com/103992475/202229381-ed2713a7-4502-4944-befb-294a12c48246.png)
+
 ## Staging Areas (Khu vực tập trung)
 ## ETL Workflows dưới dạng DAGs
 ## Các tool ETL phổ biến 
